@@ -42,13 +42,15 @@ body {
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: 800;
   margin-bottom: 0.5em;
   
 }
 
 .timer div:first-child p {
   color: #f8f8f8;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .timer div:last-child {

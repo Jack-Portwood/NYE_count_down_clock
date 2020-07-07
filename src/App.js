@@ -45,8 +45,8 @@ const App = () => {
     <section className="timer-container">
       <section className="timer">
         <div>
-          <h2> Countdown Timer</h2>
-          <p>Countdown to the end of 2020!</p>
+          <h2>Countdown</h2>
+          <p>To the end of 2020...</p>
         </div>
         <div>
           <section>
