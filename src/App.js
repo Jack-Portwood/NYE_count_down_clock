@@ -45,7 +45,6 @@ const App = () => {
     <section className="timer-container">
       <section className="timer">
         <div>
-          <span className="mdi mdi-calender-clock timer-icon"></span>
           <h2> Countdown Timer</h2>
           <p>Countdown to the end of 2020!</p>
         </div>
@@ -56,27 +55,22 @@ const App = () => {
               <small>Days</small>
             </p>
           </section>
-          <span>:</span>
+          <span>|</span>
           <section>
             <p>{timerHours}</p>
             <p>
-              {" "}
               <small>Hours</small>
             </p>
           </section>
-          <span>:</span>
+          <span>|</span>
           <section>
             <p>{timerMinutes}</p>
-            <p>
-              <small>Minutes</small>
-            </p>
+            <p><small>Minutes</small></p>
           </section>
-          <span>:</span>
+          <span>|</span>
           <section>
             <p>{timerSeconds}</p>
-            <p>
-              <small>Seconds</small>
-            </p>
+            <p><small>Seconds</small></p>
           </section>
         </div>
       </section>

@@ -1,10 +1,10 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   font-size: 100%;
 }
 
@@ -18,10 +18,10 @@ body{
   height: 100vh;
 }
 
-.timer{
-  background-color: rgba(0, 0, 0, 0.472);
+.timer {
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-  flex: column;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-bottom: 7em;
@@ -30,8 +30,11 @@ body{
   height: 100%;
 }
 
-.timer div:first-child{
+.timer div:first-child {
   text-align: center;
+  
+  
+  
 }
 
 .timer-icon{
@@ -41,6 +44,7 @@ body{
 h2 {
   font-weight: 600;
   margin-bottom: 0.5em;
+  
 }
 
 .timer div:first-child p {
@@ -51,7 +55,7 @@ h2 {
   
   border-radius: 3px;
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   margin-top: 3em;
   padding: 3em;
   text-align: center;
