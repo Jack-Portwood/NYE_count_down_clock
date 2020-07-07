@@ -1,26 +1,56 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="timer-container">
+      <section className="timer">
+        <div>
+          <span className="mdi mdi-calender-clock timer-icon"></span>
+          <h2> Countdown Timer</h2>
+          <p>Countdown to the end of 2020!</p>
+        </div>
+        <div>
+          <section>
+            <p>87</p>
+            <p>
+              <small>Days</small>
+            </p>
+          </section>
+          <span>:</span>
+          <section>
+            <p>87</p>
+            <p>
+              <small>Days</small>
+            </p>
+          </section>
+          <span>:</span>
+          <section>
+            <p>87</p>
+            <p>
+              <small>Hours</small>
+            </p>
+          </section>
+          <span>:</span>
+          <section>
+            <p>87</p>
+            <p>
+              <small>Minutes</small>
+            </p>
+          </section>
+          <span>:</span>
+          <section>
+            <p>87</p>
+            <p>
+              <small>Seconds</small>
+            </p>
+          </section>
+          
+        </div>
+      </section>
+    </section>
   );
-}
+};
 
 export default App;
