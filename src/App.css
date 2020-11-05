@@ -6,6 +6,8 @@
 
 body {
   font-size: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 .background1 {
@@ -40,11 +42,14 @@ body {
   height: 100%;
 }
 
-.timer div:first-child {
+.timerText {
   text-align: center;
-  
-  
-  
+  font-size: 4em;
+}
+
+.Gaelic{
+  text-align: center;
+  font-size: 3em;
 }
 
 .timer-icon{

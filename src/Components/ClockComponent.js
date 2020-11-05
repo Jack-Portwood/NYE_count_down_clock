@@ -1,16 +1,24 @@
 import React, { Fragment, useEffect, useRef, useState } from "react";
-import TimerExpiredComponent from './TimerExpiredComponent'
+
+const countDownText = "2020 Countdown";
+
+const newYearText = "Happy Hogmanay!" ;
+
+const newYearGelic = "Bliadhna Mhath Ùr!"
+
 const ClockComponent = () => {
   const [timerDays, setTimerDays] = useState("00");
   const [timerHours, setTimerHours] = useState("00");
   const [timerMinutes, setTimerMinutes] = useState("00");
   const [timerSeconds, setTimerSeconds] = useState("00");
-  const [isBackground1, setBackground] = useState(true)
+  const [isBackground1, setBackground] = useState(true);
+  const [timerText, setNewYearText] = useState(countDownText);
+  const [noText, setGaelicText] = useState()
 
   let interval = useRef();
 
   const startTimer = () => {
-    const countDownDate = new Date("November 04 2020 14:00:00").getTime();
+    const countDownDate = new Date("December 31 2020 00:00:00").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
@@ -27,6 +35,8 @@ const ClockComponent = () => {
         //stop our timer
         clearInterval(interval.current);
         setBackground(false)
+        setNewYearText(newYearText)
+        setGaelicText(newYearGelic)
       } else {
         //update
         setTimerDays(days);
@@ -52,9 +62,12 @@ const ClockComponent = () => {
     <Fragment>
       <section className={isBackground1 ? 'background1' : 'background2'}>
         <section className="timer">
-          <div>
-            <h2>Countdown</h2>
-            <p>To the end of 2020...</p>
+          <div className="timerText">
+            <h1>{timerText}</h1>
+          </div>
+          <br/>
+          <div className="Gaelic">
+            <h1>{noText}</h1>
           </div>
           <div>
             <section>
@@ -87,9 +100,6 @@ const ClockComponent = () => {
           </div>
         </section>
       </section>
-
-      <TimerExpiredComponent
-      className ="background2" />
     </Fragment>
   );
 };
