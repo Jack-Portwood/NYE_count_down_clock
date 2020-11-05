@@ -54,10 +54,6 @@ const ClockComponent = () => {
     };
   });
 
-
- 
-
-
   return (
     <Fragment>
       <div className="container">
