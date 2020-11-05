@@ -60,46 +60,48 @@ const ClockComponent = () => {
 
   return (
     <Fragment>
-      <section className={isBackground1 ? 'background1' : 'background2'}>
-        <section className="timer">
-          <div className="timerText">
-            <h1>{timerText}</h1>
-          </div>
-          <br/>
-          <div className="Gaelic">
-            <h1>{noText}</h1>
-          </div>
-          <div>
-            <section>
-              <p>{timerDays}</p>
-              <p>
-                <small>Days</small>
-              </p>
-            </section>
-            <span>|</span>
-            <section>
-              <p>{timerHours}</p>
-              <p>
-                <small>Hours</small>
-              </p>
-            </section>
-            <span>|</span>
-            <section>
-              <p>{timerMinutes}</p>
-              <p>
-                <small>Minutes</small>
-              </p>
-            </section>
-            <span>|</span>
-            <section>
-              <p>{timerSeconds}</p>
-              <p>
-                <small>Seconds</small>
-              </p>
-            </section>
-          </div>
+      <div className="container">
+        <section className={isBackground1 ? "background1" : "background2"}>
+          <section className="timer">
+            <div className="timerText">
+              <h1>{timerText}</h1>
+            </div>
+            <br />
+            <div className="Gaelic">
+              <h1>{noText}</h1>
+            </div>
+            <div className="timerBox">
+              <section>
+                <p>{timerDays}</p>
+                <p>
+                  <small>Days</small>
+                </p>
+              </section>
+              <span>|</span>
+              <section>
+                <p>{timerHours}</p>
+                <p>
+                  <small>Hours</small>
+                </p>
+              </section>
+              <span>|</span>
+              <section>
+                <p>{timerMinutes}</p>
+                <p>
+                  <small>Minutes</small>
+                </p>
+              </section>
+              <span>|</span>
+              <section>
+                <p>{timerSeconds}</p>
+                <p>
+                  <small>Seconds</small>
+                </p>
+              </section>
+            </div>
+          </section>
         </section>
-      </section>
+      </div>
     </Fragment>
   );
 };
