@@ -1,3 +1,11 @@
+
+
+
+
+
+## Development Background  
+This appilcation will count down till 00:00:00 31/12/20 when it will render a new background image. The main aim of this project was allow me to become work familimar with React Hooks (useState, useEffect and useRef) and to gain understanding how time worked in ReactJS.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
