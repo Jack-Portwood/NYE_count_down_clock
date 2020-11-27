@@ -1,8 +1,7 @@
 ![Imgur](https://i.imgur.com/4YkRFuJ.png)
 Clock Counting Down
 
-![Imgur](https://i.imgur.com/4YkRFuJ.png)
-Clock Expired 
+![Imgur](https://i.imgur.com/C2snZIS.png)Clock Expired 
 
 ## Development Background  
 This appilcation will count down till 00:00:00 31/12/20 when it will render a new background image. The main aim of this project was allow me to become familiar with React Hooks (useState, useEffect and useRef) and to gain understanding how time worked in ReactJS.
