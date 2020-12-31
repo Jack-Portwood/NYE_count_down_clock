@@ -1,3 +1,16 @@
+# [NYE-count-down-clock](https://hogmanay-countdown.netlify.app)
+
+
+![Imgur](https://i.imgur.com/4YkRFuJ.png)
+Clock Counting Down
+
+![Imgur](https://i.imgur.com/C2snZIS.png)Clock Expired 
+
+## Development Background  
+This appilcation will count down till 00:00:00 31/12/20 when it will render a new background image and text. The main aim of this project was allow me to become familiar with React Hooks (useState, useEffect and useRef) and to gain understanding how time worked in ReactJS.
+
+The codebase is completely reuseableas seen with [*TheBigDay*](https://github.com/Jack-Portwood/TheBigDay) app, only images and times need to be updated.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
