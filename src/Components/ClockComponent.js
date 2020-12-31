@@ -18,7 +18,7 @@ const ClockComponent = () => {
   let interval = useRef();
 
   const startTimer = () => {
-    const countDownDate = new Date("December 31 2020 00:00:00").getTime();
+    const countDownDate = new Date("January 1 2021 00:00:00").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
